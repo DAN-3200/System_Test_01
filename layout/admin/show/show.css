@@ -1,0 +1,176 @@
+/* Geral ------------------------------------------------------ */
+
+* {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFAFA;
+    overflow: hidden;
+}
+
+/* Inicio ------------------------------------------------------ */
+.visual-box{
+    height: 100px;
+    padding: 10px 20px;
+    background-color: #276cd3;
+    color: white;
+
+    display: flex;
+}
+
+main{
+    padding: 10px;
+
+}
+
+/* Card Config ------------------------------------------------------ */
+.center{
+    height: 90vh;
+    width: 80vw;
+    margin: auto;
+    
+
+    position: relative;
+    z-index: 1;
+    top: -70px;
+
+    border: 10px #FFFAFA solid;
+    border-radius: 10px;
+    background: #e7e7e7;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+}
+
+
+.navbar{
+    min-height: 40px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 30px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+
+    background-color: #28282b;
+    border-radius: 5px 5px 0px 0px; 
+   
+}
+
+.btn-nav{
+    font-size: 15px;
+    height: 35px;
+    width: auto;
+    padding: 2.5px 20px 2.5px 20px;
+    border-radius: 100px;
+    border: 2px solid #b8b8b8;
+    background: transparent;
+    color: white;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.btn-nav:hover{
+    color: white;
+    transition: 0.3s;
+    border: white 2px solid;
+    cursor: pointer;
+
+}
+
+.group-card{
+    padding: 10px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    overflow: auto;  
+}
+
+/* CARD ------------------------------------------------------ */
+.saved-card{
+    width: 100%;
+    min-height: 65px;
+    max-height: 125px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+    /* Visual */
+    background-color: white;
+    border-radius: 5px;
+    border-top: 15px solid rgb(140, 219, 153);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    font-size: 20px;
+    color: #28282b;
+
+    animation: reveal-item 0.5s;
+}
+
+.saved-card:hover{
+    transition: 0.3s;
+    border-top: 15px solid rgb(253, 163, 44);
+}
+
+.saved-card a{
+    text-decoration: none;
+    color: #28282b;
+}
+
+.sav-card-show span{
+    padding: 5px;
+}
+
+.delete:hover{
+    color: rgb(255, 129, 129);
+    transition: 0.25s;
+}
+
+/* Animation ------------------------------------------------------ */
+
+@keyframes reveal-item{
+    from {transform: translateX(-100%);} 
+    to {transform: translateX(0);}
+}
+
+
+/* Scroll Bar ------------------------------------------------------ */
+
+::-webkit-scrollbar { /* Lagura do Scroll*/
+    width: 15px;
+}
+::-webkit-scrollbar-thumb { /* Barra do scroll */
+    background: #aaaaaa;
+    border-radius: 100px;
+    background-clip: content-box;
+    border: 3px transparent solid;
+}
+
+::-webkit-scrollbar-track { /*fundo do scroll*/
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:hover { /*Animação do scrollBar*/
+    background: #7e7e7e;
+    background-clip: content-box;
+    border: 3px transparent solid;
+}
+
+

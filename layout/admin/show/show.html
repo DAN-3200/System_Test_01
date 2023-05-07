@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Home </title>
+    <link rel="stylesheet" href="/layout/admin/show/show.css">
+
+    <!-- Link Externos -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="visual-box">
+        <div style="margin: 0 auto"><p>Admin - AutorName</p></div>
+        
+    </div>
+    
+    <main>
+        <div class="center">
+            <div class="navbar">
+                <div style="display: flex; gap: 10px">
+                    <Button class="btn-nav"><i class="fa-solid fa-arrows-rotate"></i></Button>
+                    <Button class="btn-nav"><i class="fa-solid fa-plus"></i></Button>
+                </div>
+                
+                
+                <Button class="btn-nav"><i class="fa-solid fa-right-from-bracket"></i></Button>
+            </div>
+            <div class="group-card">
+                <div class="saved-card">
+                    <a class="sav-card-show" href="{{ url_for('Edit', index=card.id_card) }}"><span>{{ card.title }}</span></a>
+                    <a class="delete" style="font-size: 14px " type="button" href="{{ url_for('Delete', index=card.id_card) }}"><i class="fa-solid fa-trash-can"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
