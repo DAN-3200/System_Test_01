@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+body {
+    background-color: #28282b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Login */
+register {
+    /* Definições */
+    width: 700px;
+    min-height: 500px;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.RegisBox{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegisBox .TextoInput input {
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 375px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+}
+
+.ButtonRegister{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.SignButton {
+    background-color: #ffffff;
+    width: 100px;
+    height: 43px;
+    color: #FFA500;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 16px;
+}
+.SignButton:hover {
+    background-color: #FFA500;
+    color: white;
+    border: 0.5px solid white;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+/* Background */
+.back_video {
+    z-index: -1;
+    right: 0;
+    top: 0;
+
+    position: fixed;
+    object-fit: cover;
+    pointer-events: none;
+    width: 100%;
+    background-image: linear-gradient(black, transparent);
+}
+
+.gradiente{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}

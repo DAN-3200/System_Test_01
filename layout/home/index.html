@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel="stylesheet" href="/layout/home/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #FFFAFA;" >
+    <header>
+        <div class="Cima" >
+            <button style="position: relative; left: -15px; width: auto;">E-Commerce</button>
+            <!-- Resolver esse input -->
+            <input type="text" class="pesquisa" placeholder="Search..."> <i class="fa-solid fa-magnifying-glass" style="position: relative; right: 30px;color: #858484;"></i>
+            <button><i class="fa-regular fa-user"></i></button>
+            <button><i class="fa-regular fa-heart"></i></button>
+            <button><i class="fa-regular fa-cart-shopping"></i></button>
+            
+        </div>
+    </header>
+
+    <div class="banner">
+        <!-- <video autoplay muted loop class="banner_video">
+            <source src="/static/lofi-japanese-style-room-night-time-4k-live-wallpaper.mp4" type="video/mp4">
+        </video> -->
+        <div class="S-Banner">
+            
+            <input type="radio" id="radio01">
+            <input type="radio" id="radio02">
+            <input type="radio" id="radio03">
+            <input type="radio" id="radio04">
+
+            <div class="Slides">
+                <div class="cards first"></div>
+                <div class="cards" style="background-color: rebeccapurple;"></div>
+                <div class="cards" style="background-color: blue;"></div>
+                <div class="cards" style="background-color: green;"></div>
+            </div>
+
+        </div>
+        
+        <div class="Navigation-label">
+            <label for="radio01" class="Manual-label"></label>
+            <label for="radio02" class="Manual-label"></label>
+            <label for="radio03" class="Manual-label"></label>
+            <label for="radio04" class="Manual-label"></label>
+        </div>
+        
+            
+        
+    </div>
+    
+    <main style="padding: 10px;">
+        <div class="Meio">
+            <div class="NavMeio">
+                <Button class="ButtonNav">Categorias </Button>
+                <Button class="ButtonNav">Relevância</Button>
+                <Button class="ButtonNav">Preço</Button>
+            </div>
+            <div class="catalogo">
+
+                <div class="box">
+                    <div class="CardImg">
+                        <img src="{{IMAGEM}}" alt="">
+                    </div>
+
+                    <div class="CardValue">
+                        <p style="font-size: 14px">Titulo</p>
+                        <p style="font-size: 20px;"> Preço </p>
+                    </div>
+                </div>
+            
+
+
+            </div>
+        </div>
+
+        <div class="PagBar">
+            <button><i class="fa-solid fa-arrow-left"></i></button><br>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <h3>...</h3>
+            <p>12</p>
+            <br><button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </main>
+    
+    <footer>
+        <br><hr style="height: 5px; background-color: #FFFAFA; border: none;"><br>
+        <div class="baixo">
+            @Senai/Desenvolvimento de Sistemas.
+        </div>
+
+    </footer>
+
+    
+</body>
+</html>

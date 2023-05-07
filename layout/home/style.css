@@ -1,0 +1,354 @@
+/* Geral */
+
+* {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;;
+}
+
+::-webkit-scrollbar { /* Lagura do Scroll*/
+    width: 15px;
+}
+::-webkit-scrollbar-thumb { /* Barra do scroll */
+    background: #aaaaaa;
+    border-radius: 100px;
+    background-clip: content-box;
+    border: 3px transparent solid;
+}
+
+::-webkit-scrollbar-track { /*fundo do scroll*/
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:hover { /*Animação do scrollBar*/
+    background: #7e7e7e;
+    background-clip: content-box;
+    border: 3px transparent solid;
+}
+
+
+/* Início ----------------------> */
+header{
+    background-color:white;
+    width: auto;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Nivel se sobreposição -> Camada */
+}
+
+.Cima{
+    margin: 0 auto;
+    padding: 10px;
+    width: 1100px;
+    height: 40px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    /* border: 5px black solid;
+    border-radius: 5px; */
+}
+
+.pesquisa{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 34.5px;
+    width: 700px;
+    height: 30px;
+    
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    border: none;
+    font-size: 16px;
+    color: #28282b;
+    outline-color: #7e7e7e;
+    border: 2px solid transparent;
+    
+}
+
+.pesquisa:hover{
+    transition: 0.3s;
+    border: 2px solid rgb(172, 172, 172);
+}
+
+.pesquisa:focus-visible{
+    border: 2px solid #4c4c4d;
+}
+
+.Cima button{
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    align-items: center;
+    transition: 0.3s;
+}
+
+
+
+.Cima Button:hover{
+    background-color:  #276cd3;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+/* Banner */
+.banner{
+    height: 490px;
+    padding: 5px;
+    background-color: #276cd3;
+}
+.cards{
+    margin: 15px auto;
+    height: 360px;
+    width: 1100px;
+    background-color: #28282b;
+    border-radius: 20px;
+    transition: 0.3s;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cards:hover{
+    transition: 0.3s;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+/* Slider Settings */
+
+.S-Banner{
+    margin: 0 auto;
+    height: 390px;
+    width: 1130px;
+    overflow: hidden;
+}
+.S-Banner input{
+    display: none;
+}
+.Slides{
+    width: 405%;
+    height: 390px;
+    display: flex;
+    /* flex-direction: row; */
+    gap: 5px;
+}
+/* .S-Img{
+
+} */
+
+.Navigation-label{
+    margin-top: 10px ;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Manual-label {
+    border: #FFFAFA solid 2px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Manual-label:hover{
+    transition: 0.3s;
+    background-color: #FFFAFA;
+}
+
+#radio1:checked ~ button{
+    background-color: transparent;
+}
+
+/* Meio ----------------------> */
+.Meio{
+    margin: auto;
+    height: auto;
+    width: 1270px;
+
+    position: relative;
+    z-index: 1;
+    top: -70px;
+    border: 10px #FFFAFA solid;
+    border-radius: 15px 15px 20px 20px;
+    background-color: #E5E4E2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.NavMeio{
+    height: 40px;
+    width: auto;
+    padding: 5px;
+    padding-left: 30px;
+    background-color: #d3d3d3b4;
+    border-radius: 5px 5px 0px 0px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.ButtonNav{
+    font-size: 15px;
+    height: 35px;
+    width: auto;
+    padding: 2.5px 20px 2.5px 20px;
+    border-radius: 100px;
+    border: 2px solid #818181;
+    background: transparent;
+    color: #3f3f3f;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+.ButtonNav:hover{
+    background-color: #28282b;
+    color: white;
+    transition: 0.3s;
+    border: transparent 2px solid;
+    cursor: pointer;
+
+}
+
+.catalogo{
+    padding: 10px;
+    width: auto;
+    min-height: 1100px;
+    
+    border-radius: 0px 0px 10px 10px; 
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.box{
+    height: 280px;
+    width: 220px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #28282b;
+    display: flex;
+    flex-direction: column;
+    border: transparent 4px solid;
+    transition: 0.3s;
+}
+.box:hover{
+    transition: 0.3s;
+    border: #276cd3 4px solid;
+    
+}
+
+.CardImg{
+    background-color: #ffffff;
+    height: 200px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+}
+.CardImg img{
+    width: 210px;
+
+}
+.CardValue{
+    font-size: 14px;
+    height: 50px;
+    width: auto;
+    padding: 5px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.CardValue p{
+    overflow: hidden;
+    /* tenho que estudar */
+    line-height: 130%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.CardValue p:hover{
+    color: #FFAA33;
+    cursor: pointer;
+}
+.PagBar{
+    width: 300px;
+    height: 0px;
+    margin: auto;
+
+    
+    top: -40px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center; 
+}
+.PagBar p{
+    font-size: 18px;
+}
+.PagBar p{
+    color: black;
+    cursor: pointer;
+}
+.PagBar button{
+    height: 35px;
+    padding: 5px;
+    background-color: #d3d3d3;
+    border: 5px transparent solid;
+    border-radius: 5px;
+    color: #28282b;
+}
+.PagBar button:hover{
+    color: black;
+    cursor: pointer;
+    background-color: #b9b9b9;
+    transition: 0.3s;
+}
+
+
+/* Fim ----------------------> */
+footer{
+    background-color: #28282bf5;
+    height: 170px;
+    padding: 0px;
+}
+
+.baixo{
+    height: 100px;
+    width: 1200px;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* border: 5px black solid;
+    border-radius: 5px; */
+
+}
+
+/* CAMPO DE TESTE */
+
+
