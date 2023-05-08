@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46bfa01e-c007-4397-a9d8-c945c9cc4223" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/layout/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/register/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/templates/perfil/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/lofi-japanese-style-room-night-time-4k-live-wallpaper.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/video/lofi-japanese-style-room-night-time-4k-live-wallpaper.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil/templates/perfil/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/templates/perfil/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testesistemas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testesistemas/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +37,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Thiago/django-simple-ecommerce"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Thiago/django-simple-ecommerce&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Thiago\Teste_Sistema\perfil\templates\perfil" />
       <recent name="C:\Users\Thiago\Teste_Sistema\templates\static\video" />
       <recent name="C:\Users\Thiago\Teste_Sistema\templates\static" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for produtos.tests.TestProduto">
+    <configuration name="Python tests for produtos.tests.TestProduto" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Teste_Sistema" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;produtos.tests.TestProduto&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.TesteUsuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Teste_Sistema" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/perfil" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.TesteUsuario&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.TesteUsuario.test_deletar_usuario" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Teste_Sistema" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/perfil" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.TesteUsuario.test_deletar_usuario&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for produtos.tests.TestProduto" />
+        <item itemvalue="Python tests.Python tests for tests.TesteUsuario" />
+        <item itemvalue="Python tests.Python tests for tests.TesteUsuario.test_deletar_usuario" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

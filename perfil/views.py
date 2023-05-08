@@ -1,5 +1,6 @@
 from django.shortcuts import render,redirect
 from django.views import View
+from django.contrib import messages
 from django.contrib.auth import authenticate,login
 from . import forms
 
@@ -37,6 +38,13 @@ class Cadastro(BaseView):
     def get(self, *args, **kwargs):
         return self.page
     def post(self, *args, **kwargs):
+        if not self.usuarioBanco.is_valid():
+            messages.error(
+                self.request,
+                self.usuarioBanco.errors
+            )
+
+            return self.page
         senha = self.request.POST.get('password')
         usuario_db = self.usuarioBanco.save(commit=False)
         usuario_db.set_password(senha)

@@ -15,6 +15,7 @@
                     <div class="TextoInput">
                         <h4 style="color: white">Usuário</h4>
                         {{usuario.username}}
+                        {{usuario.errors.username}}
                         <hr>
 
                     </div>
@@ -22,12 +23,14 @@
                     <div class="TextoInput">
                         <h4 style="color: white">Email</h4>
                         {{usuario.email}}
+                        {{usuario.errors.email}}
                         <hr>
                     </div>
 
                     <div class="TextoInput">
                         <h4 style="color: white">Senha</h4>
                         {{usuario.password}}
+                        {{usuario.errors.password}}
                         <hr>
                     </div>
 
@@ -36,6 +39,7 @@
                     <div class="TextoInput">
                         <h4 style="color: white">Confirmar senha</h4>
                         {{usuario.password2}}
+                        {{usuario.errors.password2}}
                         <hr>
                     </div>
                 </div>
