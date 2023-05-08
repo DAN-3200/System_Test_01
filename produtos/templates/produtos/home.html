@@ -1,0 +1,108 @@
+{%extends 'base.html'%}
+{% block body %}
+    {% include 'parciais/_header.html'%}
+
+    <div class="banner">
+        <!-- <video autoplay muted loop class="banner_video">
+            <source src="/static/lofi-japanese-style-room-night-time-4k-live-wallpaper.mp4" type="video/mp4">
+        </video> -->
+        <div class="S-Banner">
+
+            <input type="radio" id="radio01">
+            <input type="radio" id="radio02">
+            <input type="radio" id="radio03">
+            <input type="radio" id="radio04">
+
+            <div class="Slides">
+                <div class="cards first"></div>
+                <div class="cards" style="background-color: rebeccapurple;"></div>
+                <div class="cards" style="background-color: blue;"></div>
+                <div class="cards" style="background-color: green;"></div>
+            </div>
+
+        </div>
+
+        <div class="Navigation-label">
+            <label for="radio01" class="Manual-label"></label>
+            <label for="radio02" class="Manual-label"></label>
+            <label for="radio03" class="Manual-label"></label>
+            <label for="radio04" class="Manual-label"></label>
+        </div>
+
+
+
+    </div>
+
+    <main style="padding: 10px;">
+        <div class="Meio">
+            <div class="NavMeio">
+                <Button class="ButtonNav">Categorias </Button>
+                <Button class="ButtonNav">Relevância</Button>
+                <Button class="ButtonNav">Preço</Button>
+            </div>
+            <div class="catalogo">
+                {% for produto in produtos%}
+                <div class="box">
+                    <div class="CardImg">
+                        <img src="{{ produto.prod_foto.url }}" alt="">
+                    </div>
+
+                    <div class="CardValue">
+                        <p style="font-size: 14px">{{produto.prod_nome}}</p>
+                        <p style="font-size: 20px;"> R$ {{produto.prod_preco}} </p>
+                    </div>
+                </div>
+                {% endfor%}
+
+
+            </div>
+        </div>
+
+
+
+        <div class="container-flex-pagination">
+            <ul class="d-flex-pagination">
+                {% if page_obj.has_previous %}
+                <li class="page-item sem_ideia">
+                    <a class="page-link" href="?page=1">&laquo;</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&lsaquo;</a>
+                </li>
+                {% endif %}
+
+                {% for num in page_obj.paginator.page_range %}
+
+                {% if page_obj.number == num %}
+                <li class="page-item active">
+                    <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                </li>
+                {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                </li>
+                {% endif %}
+
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                <li class="page-item ">
+                    <a class="page-link" href="?page={{ page_obj.next_page_number }}">&rsaquo;</a>
+                </li>
+                <li class="page-item sem_ideia">
+                    <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">&raquo;</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <br><hr style="height: 5px; background-color: #FFFAFA; border: none;"><br>
+        <div class="baixo">
+            @Senai/Desenvolvimento de Sistemas.
+        </div>
+
+    </footer>
+{% endblock  %}

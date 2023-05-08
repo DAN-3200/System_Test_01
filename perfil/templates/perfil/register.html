@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+{% load static %}
+{% block body%}
+    <div class="body">
+        <register>
+        <div style="Margin-top: 120px">
+            <div style="display: flex; justify-content: center;">
+                <h1 style="margin-bottom: 10px; Color: #ffffff; font-size: 30px "> Register </h1>
+            </div>
+            <div class="gradiente"></div>
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="RegisBox">
+                    <div class="TextoInput">
+                        <h4 style="color: white">Usuário</h4>
+                        {{usuario.username}}
+                        <hr>
+
+                    </div>
+
+                    <div class="TextoInput">
+                        <h4 style="color: white">Email</h4>
+                        {{usuario.email}}
+                        <hr>
+                    </div>
+
+                    <div class="TextoInput">
+                        <h4 style="color: white">Senha</h4>
+                        {{usuario.password}}
+                        <hr>
+                    </div>
+
+
+
+                    <div class="TextoInput">
+                        <h4 style="color: white">Confirmar senha</h4>
+                        {{usuario.password2}}
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="ButtonRegister">
+                    <input class="SignButton" type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </register>
+
+    <video autoplay muted loop class="back_video">
+        <source src="{% static '/video/lofi-japanese-style-room-night-time-4k-live-wallpaper.mp4' %}" type="video/mp4">
+    </video>
+    </div>
+
+{% endblock%}
