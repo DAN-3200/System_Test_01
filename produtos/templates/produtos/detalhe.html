@@ -1,0 +1,49 @@
+{% extends 'base.html'%}
+{% block body %}
+ {% include 'parciais/_header.html'%}
+<div class="banner banner-detalhe">
+        <!-- <video autoplay muted loop class="banner_video">
+            <source src="/static/lofi-japanese-style-room-night-time-4k-live-wallpaper.mp4" type="video/mp4">
+        </video> -->
+
+
+
+    </div>
+
+    <main >
+        <div class="center">
+            <form class="card" action="" method="post" id="card-edit">
+                <div class="title-card">
+                    <div class="text-card">
+                        <p>{{produto.prod_nome}}</p>
+                    </div>
+
+                  <div class="id-card">
+                    <p>ON - SALE</p>
+                  </div>
+
+                </div>
+                <div class="content-card">
+                    <div class="img-content-card">
+                        <img class="img-produto" src="{{ produto.prod_foto.url }}">
+                    </div>
+                    <div class="text-content-card">
+                        <div style="display: flex; flex-direction:column; gap: 5px">
+                            <div class="text-tonel"><p>Preço - {{produto.prod_preco}}</p></div>
+                            <div class="text-tonel"><p>Quantidade - {{produto.prod_estoque}}</p></div>
+                        </div>
+
+                        <div class="box-btn-card">
+                            <form method="POST">
+                                {% csrf_token %}
+                                <button type="submit" >COMPRAR</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+{% include 'parciais/_footer.html'%}
+{%endblock%}

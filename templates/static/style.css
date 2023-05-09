@@ -318,7 +318,7 @@ header{
 
 /* Banner */
 .banner{
-    height: 490px;
+    height: 75.5vh;
     padding: 5px;
     background-color: #276cd3;
 }
@@ -596,6 +596,213 @@ height: 35px;
     color: #28282b;
 }
 
+
+/* Meio --------------------------------------------- */
+main{
+    padding: 10px;
+}
+
+.center{
+    margin: auto;
+    height: 80vh;
+    width: 82.5vw;
+
+    position: relative;
+    z-index: 1;
+    top: -70px;
+
+    border: 10px #FFFAFA solid;
+    border-radius: 12px;
+    background-color: #E5E4E2;
+
+    overflow: hidden;
+    padding: 2px;
+
+}
+
+/* Card -------------------<> */
+
+.card{
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 55px auto;
+
+    background-color: white;
+    border-left: rgb(23, 118, 196) 17.5px solid;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+
+    animation: reveal-item 1.25s;
+
+}
+
+.title-card{
+    background-color: rgb(255, 255, 255);
+    color: #28282b;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1.25px, rgba(9, 30, 66, 0.13) 0px 1px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    border-radius: 0px 7.5px 0px 0px;
+    padding: 10px 5px;
+}
+
+.text-card{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+
+
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+.text-card:hover{
+    transition: 0.3s;
+    border: 2px solid rgb(180, 180, 180);
+}
+
+
+.id-card{
+    width: 90px;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2.5px rgb(127, 177, 86) solid;
+    font-size: 14px;
+    color: rgb(127, 177, 86);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.content-card{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 10px;
+}
+
+.img-content-card{
+    height: 89%;
+    width: 90%;
+    border-radius: 7.5px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.text-content-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.text-tonel{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    border: 1px rgb(218, 218, 218) solid;
+    transition: 0.2s;
+
+    color: #28282b;
+}
+
+.text-tonel:hover{
+    transition: 0.3s;
+    border: 1px silver solid;
+    padding-left: 25px;
+}
+
+.box-btn-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+}
+
+.box-btn-card a{
+    min-width: 50px;
+    height: 30px;
+    padding: 5px 50px;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #28282b;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Fim --------------------------------------------- */
+footer{
+    height: 100%;
+    padding: 0px;
+    background-color: #28282bf5;
+}
+
+.baixo{
+    height: 100px;
+    width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+/* Animation --------------------------------------------- */
+
+@keyframes reveal-item{
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+}
+
+
+/* Settings --------------------------------------------- */
+
+
+::-webkit-scrollbar { /* Lagura do Scroll*/
+    width: 15px;
+}
+::-webkit-scrollbar-thumb { /* Barra do scroll */
+    background: #aaaaaa;
+    border-radius: 100px;
+    background-clip: content-box;
+    border: 3px transparent solid;
+}
+
+::-webkit-scrollbar-track { /*fundo do scroll*/
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:hover { /*Animação do scrollBar*/
+    background: #7e7e7e;
+    background-clip: content-box;
+    border: 3px transparent solid;
+}
+.img-produto{
+width: 100%;
+    height: 100%;
+}
+.nada{
+height: 50vh;
+    width: 100%;}
+.banner-detalhe{
+height:22.5vh!important;
+}
 /* CAMPO DE TESTE */
 
 

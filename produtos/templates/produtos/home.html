@@ -41,8 +41,15 @@
                 <Button class="ButtonNav">Preço</Button>
             </div>
             <div class="catalogo">
+                {% if  not produtos %}
+                <p class="nada">Não foi encontrado nada</p>
+                {%endif%}
                 {% for produto in produtos%}
-                <div class="box">
+
+
+
+                <a href="{% url 'produtos:detalhe' produto.prod_codigo %}">
+                     <div class="box">
                     <div class="CardImg">
                         <img src="{{ produto.prod_foto.url }}" alt="">
                     </div>
@@ -52,6 +59,7 @@
                         <p style="font-size: 20px;"> R$ {{produto.prod_preco}} </p>
                     </div>
                 </div>
+                </a>
                 {% endfor%}
 
 
@@ -98,11 +106,5 @@
 
     </main>
 
-    <footer>
-        <br><hr style="height: 5px; background-color: #FFFAFA; border: none;"><br>
-        <div class="baixo">
-            @Senai/Desenvolvimento de Sistemas.
-        </div>
-
-    </footer>
+{% include 'parciais/_footer.html'%}
 {% endblock  %}
