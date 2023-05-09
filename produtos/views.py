@@ -40,15 +40,20 @@ class Comprar(DetalheProduto, View):
             )
         }
         self.comprar = self.produto['comprar']
+        self.produto_banco = self.produto['produto']
         self.page = render(self.request, self.template_name,self.produto)
     def get(self,*args, **kwargs):
         return self.page
     def post(self,*args, **kwargs):
+        compra_quantidade = self.request.POST.get('comp_quantidade')
         comprar_usuario = self.comprar.save(commit=False)
         usuario = get_object_or_404(User, username=self.request.user)
         comprar_usuario.comp_usuario_fk = usuario
         comprar_usuario.comp_produto_fk = self.produto_db
-        comprar_usuario.comp_quanteidade = 4
+        comprar_usuario.comp_quantidade = int(compra_quantidade)
         comprar_usuario.save()
 
+        print(self.produto_banco.prod_estoque)
+        self.produto_banco.prod_estoque -= int(compra_quantidade)
+        self.produto_banco.save()
         return redirect('produtos:home')

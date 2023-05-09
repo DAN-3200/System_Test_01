@@ -16,6 +16,6 @@ class ProdutoModel(models.Model):
     prod_foto = models.ImageField(null=True, blank=True)
 class ComprarModel(models.Model):
     comp_codigo = models.BigAutoField(primary_key=True)
-    comp_produto_fk = models.ForeignKey(ProdutoModel,on_delete=models.DO_NOTHING, null=True, blank=True)
-    comp_usuario_fk = models.ForeignKey(User, on_delete=models.DO_NOTHING, null=True, blank=True)
-    comp_quanteidade = models.PositiveIntegerField(null=True, blank=True)
+    comp_produto_fk = models.ForeignKey(ProdutoModel,on_delete=models.CASCADE, null=True, blank=True)
+    comp_usuario_fk = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    comp_quantidade = models.PositiveIntegerField(null=True, blank=True)

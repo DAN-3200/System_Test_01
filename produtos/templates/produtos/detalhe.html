@@ -36,6 +36,7 @@
                         <div class="box-btn-card">
                             <form method="POST">
                                 {% csrf_token %}
+                                {{comprar.comp_quantidade}}
                                 <button type="submit" >COMPRAR</button>
                             </form>
 

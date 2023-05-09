@@ -20,14 +20,23 @@ class BaseView(View):
         return self.page
 class Login(BaseView):
     def post(self, *args, **kwargs):
+
+        if not self.usuarioBanco.is_valid():
+            messages.error(
+                self.request,
+                self.usuarioBanco.errors
+            )
         senha = self.request.POST.get('password')
         usuario = self.request.POST.get('username')
         print(senha)
         print(usuario)
         user = authenticate(self.request, username=usuario, password=senha)
-
         if not user:
-            redirect('perfil:login')
+            messages.error(
+                self.request,
+                self.usuarioBanco.errors
+            )
+            return redirect('perfil:login')
 
         login(self.request, user=user)
 
