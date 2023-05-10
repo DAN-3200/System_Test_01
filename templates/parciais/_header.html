@@ -1,11 +1,11 @@
  <header>
         <div class="Cima" >
-            <a style="position: relative; left: -15px; width: auto;" href="{% url 'produtos:home' %}">E-Commerce</a>
+            <a class="e-commerce" href="{% url 'produtos:home' %}">E-Commerce</a>
             <!-- Resolver esse input -->
              <form action="{% url 'produtos:buscar' %}" method="GET" >
             <input type="text" class="pesquisa" placeholder="Search..." name="nome" value="{{ request.GET.nome }}"> <i class="fa-solid fa-magnifying-glass" style="position: relative; right: 30px;color: #858484;"></i>
             </form>
-             <button><i class="fa-regular fa-user"></i></button>
+             <button><a class="fa-regular fa-user" href="{% url 'perfil:logout' %}"></a></button>
             <button><i class="fa-regular fa-heart"></i></button>
             <button><i class="fa-regular fa-cart-shopping"></i></button>
 

@@ -10,12 +10,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfil/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil/templates/perfil/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/templates/perfil/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil/templates/perfil/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/templates/perfil/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perfil/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/perfil/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/perfil/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produtos/templates/produtos/detalhe.html" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/templates/produtos/detalhe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos/templates/produtos/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/templates/produtos/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produtos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/parciais/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parciais/_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Thiago/Desktop/Nova pasta (3)/projeto_blog_completo&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Thiago\Teste_Sistema\perfil\templates\perfil" />
       <recent name="C:\Users\Thiago\Teste_Sistema\templates\static\video" />
+      <recent name="C:\Users\Thiago\Teste_Sistema\perfil\templates\perfil" />
       <recent name="C:\Users\Thiago\Teste_Sistema\templates\static" />
     </key>
   </component>

@@ -3,6 +3,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views import View
 from django.db.models import Q
+from django.contrib import messages
 from .forms import ComprarForms
 from . import models
 from django.contrib.auth.models import User
@@ -56,4 +57,10 @@ class Comprar(DetalheProduto, View):
         print(self.produto_banco.prod_estoque)
         self.produto_banco.prod_estoque -= int(compra_quantidade)
         self.produto_banco.save()
+
+        messages.success(
+            self.request,
+            "Compra feita com sucesso"
+        )
+
         return redirect('produtos:home')

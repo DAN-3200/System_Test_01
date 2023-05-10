@@ -56,3 +56,9 @@ class UsuarioForms(forms.ModelForm):
 
         if validation_error_msgs:
             raise (forms.ValidationError(validation_error_msgs))
+class UsuarioLogin(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ('username','password',)
+
+
